@@ -1,0 +1,101 @@
+*{
+    box-sizing: inherit;
+}
+:root{
+    --white-color:white;
+    --primary-color:#78bbfb;
+    --background-color:#414141;
+    --background-color-hover: #2e96f9;
+    --black-color:black;
+    --white-heading-hover:#78bbfb;
+}
+html{
+    font-family:  'Roboto', sans-serif;
+    font-size: 62.5%;
+    background-color: white;
+}
+.container{
+    background-color: var(--background-color);
+    
+    margin-top: 90px;
+   
+}
+
+.grid{
+    padding:0 157px;
+}
+/* row */
+.row{
+    margin-top:75px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+.row__fade-200{
+
+    height: 200px;
+    margin-top:75px;
+    padding:0 15px;
+    position: relative;
+}
+.row__fade-650{   
+    margin-top:75px;
+    height: 650px;
+    position: relative;
+    padding:0 15px;
+}
+.row__img-200{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+   
+}
+.row__img-650{
+    width: 100%;
+    
+    height: 100%;
+}
+.column-4{
+    
+    overflow: hidden;
+    width: 255px;
+    height: 620px;
+    
+    margin: 0 15px;
+    position: relative;
+}
+.column-4-item{
+    height: 300px;
+    transition: transform ease-in 0.2s;
+    will-change: transform;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+   
+
+}
+.column-4:hover .column-4-item{
+    transform:scale(1.15);
+   
+}
+.column-4-item__1{
+    background-image: url(/assets/img/light_white.jpeg);
+    
+}
+
+.column-4-item__2{
+    background-image: url(/assets/img/rock_music.jpg);
+    
+}
+
+.column-4-item__3{
+    background-image: url(/assets/img/DJ.jpg);
+
+}
+
+.column-4-item__4{
+    background-image: url(/assets/img/market.jpg);
+}
+
